@@ -3,6 +3,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PassportModule } from '@nestjs/passport';
 import { AuthService } from './auth.service';
+import { jwtStrategy } from './strategies/jwt.strategy';
 
 @Module({
   imports: [
@@ -20,7 +21,7 @@ import { AuthService } from './auth.service';
       },
     }),
   ],
-  providers: [AuthService],
+  providers: [AuthService, jwtStrategy],
   exports: [AuthService],
 })
 export class AuthModule {}
