@@ -1,0 +1,20 @@
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+    "name": "Eric",
+    "email": "ericfelipess07@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3000/users/signin
+Content-Type: application/json
+
+{
+    "email": "ericfelipess07@gmail.com",
+    "password": "123456"
+}
+###
+GET http://localhost:3000/users
+Authorization: Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzE3NjVjYzdiNDAwNzMyNmJiYTk0YTIiLCJpYXQiOjE2NjI0Nzg1MjQsImV4cCI6MTY2MjU2NDkyNH0.UyZZQW0MrU_99cU7S3X3JlyD4TJ_fat3R5j1k1f-YiE

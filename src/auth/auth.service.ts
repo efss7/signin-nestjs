@@ -36,7 +36,7 @@ export class AuthService {
       throw new BadRequestException('Bad request.');
     }
 
-    const [, token] = authHeader.split('');
+    const [, token] = authHeader.split(' ');
     return token;
   }
 
